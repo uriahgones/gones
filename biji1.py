@@ -28,6 +28,8 @@ chrome_options.add_argument("--metrics-recording-only")  # Nonaktifkan pengumpul
 chrome_options.add_argument("--safebrowsing-disable-auto-update")  # Nonaktifkan pembaruan otomatis Safe Browsing
 chrome_options.add_argument("--disable-component-update")  # Nonaktifkan pembaruan komponen
 chrome_options.add_argument("--disable-domain-reliability")  # Nonaktifkan keandalan domain
+chrome_options.add_argument("--user-data-dir=/tmp/user-data")
+chrome_options.add_argument("--homedir=/tmp") # Penting untuk menghindari penulisan di /root
 
 # --- Argumen tambahan untuk memblokir koneksi ke Google Optimization Guide ---
 # Menonaktifkan fitur-fitur yang terkait dengan Optimization Guide dan sejenisnya
